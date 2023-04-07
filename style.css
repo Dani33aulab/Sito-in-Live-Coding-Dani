@@ -1,0 +1,231 @@
+/* setting Font */
+
+*{
+
+    font-family: 'Arimo', sans-serif; 
+    
+}
+
+
+body{
+
+    overflow-x: hidden;
+
+}
+
+
+
+h1, h2, h3{
+
+    font-family: 'Oswald'; 
+}
+
+
+/* setting colori */
+
+:root{
+
+    --primary : rgb(27, 193, 208) ;
+    --secondary: #6020B0 ;
+    --accent : #FCFA60 ; 
+    --whiteCustom : rgb(249, 249, 239) ; 
+    --blackCustom : #120e0d ; 
+
+}
+
+
+/* classi colore */
+
+
+.text-primaryC{
+       
+    color: var(--primary);
+
+
+}
+
+
+.text-secondaryC{
+
+       color: var(--secondary);
+
+}
+
+
+.text-accentC{
+
+    color: var(--accent); 
+
+}
+
+
+
+.text-whiteC{
+
+    color: var(--whiteCustom);
+
+}
+
+
+.text-blackC{
+
+    color: var(--blackCustom);
+}
+
+
+/* classi colore background */ 
+
+.background-primaryC{
+       
+    color: var(--primary);
+
+
+}
+
+
+.background-secondaryC{
+
+       color: var(--secondary);
+
+}
+
+
+.background-accentC{
+
+    color: var(--accent); 
+
+}
+
+
+
+.background-whiteC{
+
+    color: var(--whiteCustom);
+
+}
+
+
+.background-blackC{
+
+    color: var(--blackCustom);
+}
+
+
+
+/* header */
+
+
+.headerCustum{
+    background: linear-gradient(145deg, rgba(130, 130, 121, 0.222)); 
+    background: url('./media/centro-commerciale-sfocato-astratto.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+
+.btnCustom{
+
+    background-color: var(--primary);
+    color: var(--secondary); 
+}
+.btn-primaryC:hover{
+
+    background-color: var(--primary);
+
+}
+
+.logoA{
+
+    width: 60px;
+}
+
+
+.increment-numbers{
+
+    font-size: 45px; 
+    color: var(--secondary);
+    font-weight: 900;
+
+}
+
+
+.televisor{
+
+    width: 90%;
+}
+
+
+/*sezione swiper*/
+
+.swiper {
+   
+    height: 400px;
+  }
+
+
+  .card-custom{
+
+    
+    height: 300px;
+    border: 4px solid var(--secondary);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+
+  /* sezione maouse enter */
+
+  .col-custom{
+
+    border-radius: 20px;
+    border: 3px solid var(--secondary);
+    background-color: #ded0ef;
+    color: var(--blackCustom);
+    padding: 20px;
+
+    transition: 0,2s;
+
+  }
+
+
+  .col-custom:hover{
+
+    background-color: var(--secondary);
+    color: var(--whiteCustom);
+    transform: scale(1.1)
+
+  }
+
+  
+  @media screen and (max-width: 900px) {
+
+      
+      .col-custum:hover{
+
+            transform: scale(0.9);
+            
+      }
+  }
+
+
+  /* footer */
+
+  .min-h{
+
+    min-height: 50px;
+
+  }
+
+.footer{
+    
+    background-color: rgba(232, 218, 244, 0.99);
+    
+}
