@@ -229,3 +229,18 @@ h1, h2, h3{
     background-color: rgba(232, 218, 244, 0.99);
     
 }
+
+
+
+.announcement-card{
+
+    min-height: 350px;
+    border: 3px solid var(--secondary);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
