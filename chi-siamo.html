@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TVendo.it</title>
+    <title>TVendo/chisiamo.it</title>
 
 
     <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon">
@@ -78,7 +78,7 @@
 
         <div class="col-12 text-center">
 
-        <h1 data-aos="fade-left" class="display-1 fw-bold text-secondaryC">Annunci Plus+</h1>
+        <h1 data-aos="fade-left" class="display-1 fw-bold text-secondaryC">Chi Siamo?</h1>
 
         </div>
 
@@ -88,107 +88,57 @@
 
   <!-- FINE HEADER -->
 
+  <!-- Inizio chi siamo -->
 
-    <!-- inizio annunci-->
-     <section class="container-fluid my-5">
-       <div class="row">
-         <h2>Filtra per:</h2>
-         <div class="col-12 col-md-3">
+    <section clas="container">
 
-           <div class="accordion accordion-flush" id="accordionFlushExample">
-             <div class="accordion-item">
-               <h2 class="accordion-header" id="flush-headingOne">
-                 <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                   Categoria
-                 </button>
-               </h2>
-               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="row vh-100 justify-content-center my-5">
+
+        <div class="col-6">
+
+        <div class="docenti">
+
+          <h2 class="text-center my-5"> IL NOSTRO STAFF</h2>
 
 
-                 <!-- filtro per categoria-->
-                 <div id="categoryWrapper" class="accordion-body">
 
-                   <div class="form-check">
-                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="All">
-                     <label class="form-check-label" for="All">
-                       Tutte le categorie
-                     </label>
-                   </div>
+              <!-- Swiper -->
 
-                 </div>
-               </div>
-             </div>
-             <div class="accordion-item">
-               <h2 class="accordion-header" id="flush-headingTwo">
-                 <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                   Prezzo
-                 </button>
-               </h2>
-               <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                  <div class="swiper-slide">Marco</div>
+                  <div class="swiper-slide">Giovanni</div>
+                  <div class="swiper-slide">Chiara</div>
+                  <div class="swiper-slide">Mara</div>
+                  <div class="swiper-slide">Dani</div>
+                  <div class="swiper-slide">Valerio</div>
 
-                 <!-- filtro per prezzo-->
-                 <div class="accordion-body">
+                  </div>
+                  </div>
 
-                   <input id="inputPrice" type="range">
+          <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-                   <div>
-                     <span id="incrementNumber" class="inputNumber">
-                        0
-                     </span>
-
-                   </div>
+          <!-- Initialize Swiper -->
+              <script>
+              var swiper = new Swiper(".mySwiper", {
+                  effect: "cards",
+                grabCursor: true,
+            });
+        </script>
 
 
-                 </div>
-               </div>
-             </div>
-             <div class="accordion-item">
-               <h2 class="accordion-header" id="flush-headingThree">
-                 <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                   Parola
-                 </button>
-               </h2>
-               <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        </div>
 
-                 <!-- filtro per parola-->
-                 <div class="accordion-body">
+        </div>
 
+      </div>
 
-                 </div>
-               </div>
-             </div>
-           </div>
-
-
-          </div>
+    </section>
 
 
 
 
-        <div id="cardsWrapper" class="row">
-
-    <div class="col-md-3 my-4">
-
-      <div class="announcement-card">
-
-        <p class="h3">Nome Prodotto</p>
-        <h3>Categoria</h3>
-        <h3>Prezzo</h3>
-
-  </div>
-
-</div>
-
-
-</div>
-
-
-       </div>
-
-     </section>
-
-
-    <!-- fine annuncu-->
 
 
 
@@ -219,14 +169,12 @@
         AOS.init();
      </script>
 
-    <!-- swiper cdn -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 
     <!-- JS interno custom -->
 
 
     <!-- JS esterno custom -->
-      <script defer src="./annunci.js"></script>
+      <script defer src="./chi-siamo.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-/* cattura navbar*/
+/* cattura navbar*
 
 let mainNavbar = document.querySelector('#mainNavbar'); 
 
@@ -21,7 +21,9 @@ document.addEventListener('scroll', ()=>{
 
 
 })
+/*
 
+/*
 function createInterval(finalNumber, element){
 
     let counter = 0;
@@ -46,9 +48,6 @@ function createInterval(finalNumber, element){
 
 }
 
-createInterval();
-
-
 let firstSpan = document.querySelector('#first-span');
 let secondSpan = document.querySelector('#second-span');
 let thirdSpan = document.querySelector('#third-span');
@@ -58,6 +57,10 @@ let thirdSpan = document.querySelector('#third-span');
 createInterval(1500, firstSpan);
 createInterval(300, secondSpan);
 createInterval(100, thirdSpan);
+*/
+
+
+
 
 
 
@@ -90,6 +93,8 @@ categories.forEach ( (category)=> {
 
 
 
+console.log(uniqueCategories);
+
 uniqueCategories.forEach( (category)=>{
 
 
@@ -107,21 +112,83 @@ uniqueCategories.forEach( (category)=>{
     
     
     `;
-
+  console.log(category);
     categoryWrapper.appendChild(div);
 
 
 
-}  )
+})
+
+
+    /*cattura range input*/
+
+    let inputPrice = document.querySelector('#inputPrice');
+
+    let incrementNumber = document.querySelector('#incrementNumber');
+
+    
+    
+    function setInputPrice(){
+
+        let prices = data.map((annuncio)=> Number (annuncio.price) );
+        
+        let maxPrice = Math.max(...prices); 
+
+        inputPrice.max = Math.ceil = (maxPrice); 
+
+        inputPrice.value = Math.ceil(maxPrice);
+        
+        incrementNumber.innerHTML = Math.ceil(maxPrice);
+
+        
+
+    }
+
+    setInputPrice();
 
 
 }
+    function filterbyPrice(prezzo){
+
+    let filtered = data.filter(  (annuncio)=> annuncio.price <= prezzo );
+
+    showCards(filtered);
+
+}
+
+
+
+    inputPrice.addEventListener('input', ()=>{
+
+    filterbyPrice(inputPrice.value);
+
+    incrementNumber.innerHTML = inputPrice.value;
+
+})
+
+
+
+
 
 setCategoryFilters();
+
+
+
+
+
+
+
+
+
 
 /*mostra cards*/
 
 function showCards(array){
+
+
+    
+
+    array.sort((a,b) => Number(b.price - a.price));
 
     
     array.forEach( (element)=>{
@@ -132,6 +199,8 @@ function showCards(array){
 
         div.innerHTML = `
                         <div class="announcement-card">
+
+                        <img class="img-card-custom" src="https://picsum.photos/200" alt="> 
 
                         <h3>${element.category}</h3>
                         <h3>${element.price} € </h3>
@@ -153,5 +222,33 @@ showCards(data);
 
 } )
 
+function filterbyCategory(categoria){
+    function filterByCategory(array){
+
+        let arrayFromNodelist = Array.from(checkInputs);
+
+        let button = arrayFromNodelist.find((bottone)=> bottone.checked);
+
+        let categoria = button.id;
+
+        // console.log(categoria);
 
 
+        if(categoria != 'All'){
+
+            let filtro = data.filter( (annuncio)=> annuncio.category == categoria );
+            let filtro2 = array.filter( (annuncio)=> annuncio.category == categoria );
+
+            showCards(filtro);
+            return filtered;
+
+        } else {
+
+            showCards(data);
+            return data;
+
+        }
+
+        
+    }
+}

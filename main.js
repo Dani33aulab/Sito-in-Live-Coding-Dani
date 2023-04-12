@@ -46,7 +46,7 @@ function createInterval(finalNumber, element){
 
 }
 
-createInterval();
+
 
 
 let firstSpan = document.querySelector('#first-span');
